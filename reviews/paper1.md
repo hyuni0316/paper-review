@@ -1,38 +1,61 @@
-# 📄 Paper Review: Paper Title 1
+# 📄 Paper Review: ReelFramer: Human-AI Co-Creation for News-to-Video Translation
 
 ## 📝 Basic Info
-- **Title**: Paper Title 1
-- **Authors**: 
-- **Conference/Journal**: 
-- **Year**: 
+- **Title**: ReelFramer: Human-AI Co-Creation for News-to-Video Translation- **Authors**: 
+- **Conference/Journal**: Proceedings of the CHI Conference on Human Factors in Computing Systems (CHI ’24)
+- **Year**: 2024
 - **Link**: [link/DOI](https://dl.acm.org/doi/pdf/10.1145/3613904.3642868#page=14.66)
 
 ---
 
 ## 🎯 Summary
-간단히 논문이 다루는 주제와 핵심 아이디어를 정리하세요.
-
+이 논문은 뉴스 아티클을 뉴스 릴스로 변환하는 데 어려움을 겪는 언론인들을 지원하기 위해, 인간-AI 공동 창작 시스템 ReelFramer를 제안한다.
+ReelFramer는 서사 프레이밍(narrative framing)이라는 구조적 접근을 통해 뉴스 기사를 대화형 스크립트와 스토리보드로 전환하며, 사용자가 다양한 톤(정보 중심 ↔ 오락 중심)을 탐색할 수 있도록 돕는다.
 ---
 
 ## 🔑 Key Points
-- 핵심 기여 1
-- 핵심 기여 2
+- 핵심 기여 1: 세 가지 대표적인 **내러티브 프레이밍(expository dialog, reenactment, comedic analogy)**을 정의하고, 뉴스 기사를 릴 형식에 맞게 재구성하는 구조 제공.
+- 핵심 기여 2: AI(LLM·텍스트-투-이미지 모델)를 활용한 스크립트 및 스토리보드 생성 워크플로우 제안.
+- 핵심 기여 3: **저널리스트와 공동 디자인(co-design)**을 통해 실제 제작 과정에 적합한 시스템 설계.
+- 핵심 기여 4: 사용자 연구를 통해 ReelFramer가 뉴스 릴 제작 과정의 탐색성과 효율성을 높여줌을 입증.
 
 ---
 
-## 🛠️ Method
-논문에서 제안한 방법론 정리
+## 🧪 Evaluation
+- **LLM 스크립트 평가 실험**  
+  - 조건: *With premise* vs *Without premise*  
+  - 데이터: 6개 기사 × 3 프레임 × 2회 = 24개 스크립트  
+  - 평가자: 언론학 배경 전문가 4명  
+  - 기준: 내러티브 적합성, 정보 정확성, 커버리지, 일관성, 재미, 틱톡 스타일  
+
+- **사용자 연구**  
+  - 참가자: 언론학 대학원생 5명  
+  - 과제: Associated Press 기사 기반 릴 제작 (총 10개)  
+  - 절차: 기사 읽기 → ReelFramer → 스크립트 → 스토리보드 → 촬영 → 인터뷰  
+  - 평균 소요: 스크립트 제작 12.8분  
 
 ---
 
-## 📊 Results
-- 주요 실험 결과
-- 기존 방법과 비교
-- 한계점
+## 📊 Result
+- **LLM 평가 결과**  
+  - Premise 제공 시 ↑  
+    - 내러티브 적합성 (p=0.028)  
+    - 정보 커버리지 (p=0.034)  
+    - 일관성 (p=0.011)  
+  - 재미·틱톡 스타일 점수 → 큰 차이 없음 (AI 유머 한계)  
+  - 정보 정확성 → premise 여부와 관계없이 유사  
 
+- **사용자 연구 결과**  
+  - ReelFramer → **탐색성**(다양한 프레임·스크립트 시도) & **효율성**(시간 절약) 향상  
+  - Premise 단계 → 정보 구조화·제어력 강화  
+  - 자동 생성 스크립트 → “90% 완성”, punchline 등은 수정 필요  
+  - 최종 품질 확보를 위해 **사용자 개입·편집 필수**
+    
 ---
 
 ## 💡 Thoughts
-- 인상 깊은 점
-- 아쉬운 점
 - 아이디어 확장 가능성
+  - 다른 내러티브 프레임 추가 (예: 뮤지컬, 시사 패러디, 밈 기반 등).
+  - 멀티모달 제어(예: 음성 톤, 배경 음악, 카메라 앵글까지 제안) 확장.
+  - 교육용 도구로 활용 가능 (저널리즘 수업에서 릴 제작 훈련).
+  - 자동 fact-checking 모듈과 결합해 정보 정확성 강화 가능.
