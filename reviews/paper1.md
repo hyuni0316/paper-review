@@ -5,7 +5,7 @@
 - **Authors**: 
 - **Conference/Journal**: 
 - **Year**: 
-- **Link**: [arXiv/DOI](#https://dl.acm.org/doi/pdf/10.1145/3613904.3642868#page=14.66)
+- **Link**: [arXiv/DOI](https://dl.acm.org/doi/pdf/10.1145/3613904.3642868#page=14.66)
 
 ---
 
